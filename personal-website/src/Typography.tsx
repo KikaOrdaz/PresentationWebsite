@@ -12,7 +12,7 @@ export function TypographyH1({text}: TypographyProps) {
 
 export function TypographyH2({text}: TypographyProps) {
   return (
-    <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+    <h2 className="text-[#334155] scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
       {text}
     </h2>
   )
@@ -20,7 +20,7 @@ export function TypographyH2({text}: TypographyProps) {
 
 export function TypographyH3({text}: TypographyProps) {
   return (
-    <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
+    <h3 className="text-[#334155] scroll-m-20 text-2xl font-semibold tracking-tight">
         {text}
     </h3>
   )
@@ -35,8 +35,13 @@ export function TypographyH4({text}: TypographyProps) {
 }
 
 export function TypographyP({text}: TypographyProps) {
+  /* return (
+    <p className="text-[#334155] leading-7 [&:not(:first-child)]:mt-6">
+        {text}
+    </p>
+  ) */
   return (
-    <p className="leading-7 [&:not(:first-child)]:mt-6">
+    <p className="text-[#334155] leading-7">
         {text}
     </p>
   )
