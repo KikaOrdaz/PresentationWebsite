@@ -12,7 +12,7 @@ export function TypographyH1({text}: TypographyProps) {
 
 export function TypographyH2({text}: TypographyProps) {
   return (
-    <h2 className="text-[#334155] scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+    <h2 className="text-[#334155] scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
       {text}
     </h2>
   )
@@ -28,7 +28,7 @@ export function TypographyH3({text}: TypographyProps) {
 
 export function TypographyH4({text}: TypographyProps) {
   return (
-    <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
+    <h4 className="text-[#334155] scroll-m-20 text-xl font-semibold tracking-tight">
         {text}
     </h4>
   )

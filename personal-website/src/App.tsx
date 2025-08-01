@@ -22,7 +22,7 @@ function Pages() {
     <>
       {pages_values.map((index) => (
         <div key={index.id} id={index.div} className="flex flex-col snap-start relative">
-          <PageTitle text={index.name+index.extra} icon={index.img_src}/>
+          <PageTitle text={index.name+index.extra} icon={index.img_src} div={index.div}/>
           <index.component />
         </div>
       ))}
