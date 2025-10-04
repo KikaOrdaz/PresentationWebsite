@@ -12,7 +12,7 @@ export default function PageTitle ({text, icon, div}: PageTitleProps){
         return(
 
             <a href={"#main-"+div} className="flex flex-row sticky pt-10 pl-10">
-                <img src={"public/icons/" + icon + ".svg"} alt="" className="h-[40px] pr-2" />
+                <img src={"icons/" + icon + ".svg"} alt="" className="h-[40px] pr-2" />
                 <TypographyH1 text={text}/>
             </a>
 
@@ -20,7 +20,7 @@ export default function PageTitle ({text, icon, div}: PageTitleProps){
     } else if(icon){
         return(
             <div className="flex flex-row sticky pt-10 pl-10">
-                <img src={"public/icons/" + icon + ".svg"} alt="" className="h-[40px] pr-2" />
+                <img src={"icons/" + icon + ".svg"} alt="" className="h-[40px] pr-2" />
                 <TypographyH1 text={text}/>
             </div>
         )

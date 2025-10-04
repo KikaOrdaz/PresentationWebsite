@@ -26,7 +26,7 @@ function Index(){
   const arrows = pages_values.map(function(index) {
     if(index.img_src){
       return(
-        <img key={index.id} src={"public/arrows/" + index.arrow.src + ".svg"} className={"relative" + " " + index.arrow.class}/>
+        <img key={index.id} src={"arrows/" + index.arrow.src + ".svg"} className={"relative" + " " + index.arrow.class}/>
       );
     }
   });
@@ -36,9 +36,9 @@ function Index(){
       return(
           <a href={"#"+index.div}>
             <div key={index.id} className={"flex flex-row align-content-middle relative"}>
-              {/* <img src={"public/arrows/" + index.arrow.src + ".svg"} className={"relative" + " " + index.arrow.class}/> */}
+              {/* <img src={"arrows/" + index.arrow.src + ".svg"} className={"relative" + " " + index.arrow.class}/> */}
               <TypographyLead2 text={index.name}/>
-              <Icon src={"public/icons/" + index.img_src + ".svg"} size="30" pad="px-3"/>
+              <Icon src={"icons/" + index.img_src + ".svg"} size="30" pad="px-3"/>
             </div>
           </a>
       );
@@ -64,12 +64,12 @@ function Avatar() {
     <div className="flex place-items-center justify-center relative">
       <div className="w-50 h-50 rounded-full overflow-hidden">
         <img
-          src="public/images/IMG_2099.JPG"
+          src="images/IMG_2099.JPG"
           alt="Avatar de kika"
           className="w-full h-full object-cover"
         />
       </div>
-      <img src="public/arrows/setaondulada.svg" className="absolute top-[290px] left-[150px]"/>
+      <img src="arrows/setaondulada.svg" className="absolute top-[290px] left-[150px]"/>
       <div className="absolute top-[500px]">
         <TypographyLead2 text="Eu!"/>
       </div>

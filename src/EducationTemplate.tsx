@@ -19,7 +19,7 @@ export default function EducationTemplate({name, dates, div, image, text, side, 
     return(
         <div key={id} id={div} className="snap-start h-screen w-screen flex flex-col px-10 py-5 shrink-0">
             <div className="flex flex-row pt-5">
-                <img src="public/icons/location.svg" alt="" className="h-[30px]" />
+                <img src="icons/location.svg" alt="" className="h-[30px]" />
                 <div className="flex flex-col">
                     <TypographyH3 text={name}/>
                     <div className="-m-py">
@@ -35,8 +35,8 @@ export default function EducationTemplate({name, dates, div, image, text, side, 
 }
 
 function Layout({image, text, side}: LayoutProps){
-    const img = ((pad : string) =>{ return(<img src={"public/images/" + image + ".png"} alt="" className={"h-[400px] " + pad}/> )})
-    // const img = <img src={"public/images/" + image + ".png"} alt="" className="h-[400px]"/> 
+    const img = ((pad : string) =>{ return(<img src={"images/" + image + ".png"} alt="" className={"h-[400px] " + pad}/> )})
+    // const img = <img src={"images/" + image + ".png"} alt="" className="h-[400px]"/> 
     const txt =( (pad : string) => {return(<div className={"place-content-center grow " + pad}>
                     <TypographyLead1 text={text} />
                 </div>)})

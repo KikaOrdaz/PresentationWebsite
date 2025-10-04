@@ -18,7 +18,7 @@ type LayoutProps = {
 function Layout({page_info, div} : LayoutProps){
     const index = page_info.map((value) => {return(
         <a key={value.id} className="flex flex-row align-middle gap-1.5" href={"#"+value.div}>
-            <img src="public/icons/location.svg" alt="" className="h-[30px]" />
+            <img src="icons/location.svg" alt="" className="h-[30px]" />
             <TypographyH3 text={value.name}/>
             <TypographyP text={"(" + value.dates + ")"} />
         </a>
@@ -32,7 +32,7 @@ function Layout({page_info, div} : LayoutProps){
                     {index}
                 </div>
                 <div className="pl-[100px] pt-10">
-                    <img src={"public/arrows/setaloop2.svg"} className="w-[500px]"/>
+                    <img src={"arrows/setaloop2.svg"} className="w-[500px]"/>
                 </div>
             </div>
             {page_info.map((value) => (
