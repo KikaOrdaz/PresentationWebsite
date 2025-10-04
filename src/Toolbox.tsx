@@ -10,7 +10,7 @@ export default function Toolbox(){
     const tools_li = (tool : {name:string, icon:string}[]) => tool.map((t) => (
         <li key={t.name} className="flex flex-row items-center gap-2">
             <TypographyP text={t.name}/> 
-            <img src={"src/icons/toolbox/"+t.icon+".svg"}/>
+            <img src={"public/icons/toolbox/"+t.icon+".svg"}/>
         </li>
     ))
 
@@ -24,7 +24,7 @@ export default function Toolbox(){
                 </ul>
             </div>
 
-            <img src={"src/icons/toolbox/"+value.icon+".svg"}/>
+            <img src={"public/icons/toolbox/"+value.icon+".svg"}/>
         </div>
     )})
 
@@ -41,7 +41,7 @@ export default function Toolbox(){
         <div className="grid grid-cols-3 w-screen h-screen items-start pt-15">
             <div className="flex flex-col items-center">
                 <div className="flex flex-row place-content-center items-center gap-1">
-                    <img src={"src/icons/toolbox/"+tools.proglang.icon + ".svg"} />
+                    <img src={"public/icons/toolbox/"+tools.proglang.icon + ".svg"} />
                     <TypographyH2 text={tools.proglang.name} />
                 </div>
         
@@ -53,22 +53,22 @@ export default function Toolbox(){
             <div className="flex flex-col place-content-center items-center justify-between">
                 <div className="grid pt-5 items-center place-content-center pb-32 translate-x-10">
                     <div className="col-start-2 row-start-1">
-                        <img src="src/icons/toolbox/toolbox.svg" />
+                        <img src="public/icons/toolbox/toolbox.svg" />
                     </div>
                     <div className="col-start-2 row-start-1 -translate-x-48 -translate-y-6">
-                        <img src="src/arrows/toolbox/setacurvalarga.svg" className="" />
+                        <img src="public/arrows/toolbox/setacurvalarga.svg" className="" />
                     </div>
                     <div className="col-start-2 row-start-1 translate-x-24">
-                        <img src="src/arrows/toolbox/setacurva4.svg" className="" />
+                        <img src="public/arrows/toolbox/setacurva4.svg" className="" />
                     </div>
                     <div className="col-start-2 row-start-1 translate-y-32 translate-x-10">
-                        <img src="src/arrows/toolbox/setaondulada2.svg" className="" />
+                        <img src="public/arrows/toolbox/setaondulada2.svg" className="" />
                     </div>
                 </div>
                 
                 <div className="">
                     <div className="flex flex-row place-content-center items-center gap-1">
-                        <img src={"src/icons/toolbox/"+tools.lang.icon + ".svg"} />
+                        <img src={"public/icons/toolbox/"+tools.lang.icon + ".svg"} />
                         <TypographyH2 text={tools.lang.name} />
                     </div>
                     <div className="items-end">
@@ -79,7 +79,7 @@ export default function Toolbox(){
             
             <div className="flex flex-col place-content-center items-center">
                 <div className="flex flex-row place-content-center items-center gap-1">
-                    <img src={"src/icons/toolbox/"+tools.softskills.icon + ".svg"} />
+                    <img src={"public/icons/toolbox/"+tools.softskills.icon + ".svg"} />
                     <TypographyH2 text={tools.softskills.name} />
                 </div>
 
