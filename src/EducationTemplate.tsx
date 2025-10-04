@@ -4,6 +4,7 @@ type EducationProps = {
     div : string, 
     name : string,
     dates: string,
+    id : number
 }
 
 type LayoutProps = {
@@ -14,9 +15,9 @@ type LayoutProps = {
 
 type EducationTemplateProps = EducationProps & LayoutProps
 
-export default function EducationTemplate({name, dates, div, image, text, side}: EducationTemplateProps){
+export default function EducationTemplate({name, dates, div, image, text, side, id}: EducationTemplateProps){
     return(
-        <div id={div} className="snap-start h-screen w-screen flex flex-col px-10 py-5 shrink-0">
+        <div key={id} id={div} className="snap-start h-screen w-screen flex flex-col px-10 py-5 shrink-0">
             <div className="flex flex-row pt-5">
                 <img src="src/icons/location.svg" alt="" className="h-[30px]" />
                 <div className="flex flex-col">

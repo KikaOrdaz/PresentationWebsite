@@ -16,7 +16,7 @@ export default function Toolbox(){
 
 
     const prog = tools.proglang.objects.map((value) => {return(
-        <div className="grid grid-cols-2 items-center gap-16 pt-5">
+        <div key={crypto.randomUUID()} className="grid grid-cols-2 items-center gap-16 pt-5">
             <div className="flex flex-col items-start">
                 <TypographyH4 text={value.type} />
                 <ul className="list-none">

@@ -4,15 +4,17 @@ import { Study, Learn } from "./EducationPages"
 import Interests from "./Interests"
 import Toolbox from "./Toolbox"
 
+
+
 export const main_text = "Olá! Eu sou a Francisca. Terminei recentemente o meu Mestrado em Engenharia Informática e de Computadores pelo Técnico. Tenho experiência em desenvolvimento web e mobile, em trabalhar com equipas multidisciplinares, com uma forte paixão por design centrado no utilizador. Sediada em Lisboa, trago otimismo, criatividade e um espírito colaborativo tanto para a tecnologia como para a vida. Gosto de música, histórias com emoção, viajar e organizar eventos, e tenho um compromisso profundo com o crescimento pessoal — o meu e o dos outros."
 
 export const pages_values = [
-  {id : 0, div:"main", name:"Francisca Ordaz", extra : "", img_src : "", arrow:{}, component:MainPage, text : main_text, show:true},
-  {id : 1, div:"estudei", name: "Onde estudei", extra : "", img_src : "pencil", arrow : {src : "setacurva1", class : "left-[20px]",}, component:Study, show:true},
-  {id : 2, div:"aprendi", name: "Onde aprendi", extra : " (para além dos livros)", img_src : "guitar", arrow : {src : "setacurva2", class : "  -rotate-6 left-[20px]",}, component:Learn, show:true},
-  {id : 3, div:"gosto", name: "Coisas de que gosto", extra : "", img_src : "plane", arrow : {src : "setaloop1", class : "left-[10px]",}, component:Interests, show:true},
-  {id : 4, div:"tools", name: "Caixa de ferramentas", extra : "", img_src : "tool", arrow : {src : "setaloop2", class : "top-[20px]",}, component:Toolbox, show:true},
-  // {id : 5, div:"futuro", name: "Futuro", extra : " (onde quero continuar a aprender)", img_src : "rocket", arrow : {src : "setacurva3", class : "",}, component:GenericPage, show:true},
+  {id : 0, div:"main", name:"Francisca Ordaz", extra : "", img_src : "", arrow:{}, component:MainPage, text : main_text},
+  {id : 1, div:"estudei", name: "Onde estudei", extra : "", img_src : "pencil", arrow : {src : "setacurva1", class : "left-[20px]",}, component:Study},
+  {id : 2, div:"aprendi", name: "Onde aprendi", extra : " (para além dos livros)", img_src : "guitar", arrow : {src : "setacurva2", class : "  -rotate-6 left-[20px]",}, component:Learn},
+  {id : 3, div:"gosto", name: "Coisas de que gosto", extra : "", img_src : "plane", arrow : {src : "setaloop1", class : "left-[10px]",}, component:Interests},
+  {id : 4, div:"tools", name: "Caixa de ferramentas", extra : "", img_src : "tool", arrow : {src : "setaloop2", class : "top-[20px]",}, component:Toolbox},
+  // {id : 5, div:"futuro", name: "Futuro", extra : " (onde quero continuar a aprender)", img_src : "rocket", arrow : {src : "setacurva3", class : "",}, component:GenericPage},
 ]
 
 export const education_pages =
@@ -28,6 +30,6 @@ export const education_pages =
     
 export const tools = {
   proglang:{name: "Linguagens de Programação" , icon:"codinglanguages", objects:[{type:"Bases", icon:"lego", langs:["C","Python","Java","SQL"]},{type:"Mobile", icon:"phone", langs:["Swift","Kotlin"]},{type:"Frontend", icon:"cursor", langs:["Svelte","Javascript","HTML","Typescript"]}],},
-  lang:{name: "Línguas" , icon:"translate", objects:[{name:"Português", icon:"b1-doodle"},{name:"Inglês", icon:"b1-doodle"},{name:"Italiano", icon:"c2-doodle"}],},
+  lang:{name: "Línguas" , icon:"translate", objects:[{name:"Português", icon:"c2-doodle"},{name:"Inglês", icon:"c2-doodle"},{name:"Italiano", icon:"b1-doodle"}],},
   softskills:{name: "Soft Skills" , icon:"softskills", objects:[{name:"Trabalho de Equipa", icon:"team"},{name:"Criatividade e Resolução de Problemas", icon:"puzzle"},{name:"Liderança e Mentoria", icon:"flag"},{name:"Planeamento Orientado a Objetivos", icon:"target"},{name:"Falar em Público", icon:"publicspeaking"}]},
 }

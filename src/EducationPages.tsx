@@ -11,13 +11,13 @@ export function Learn(){
 }
 
 type LayoutProps = {
-    page_info : {div: string, name: string, dates: string, image: string, side: string}[],
+    page_info : {div: string, name: string, dates: string, image: string, side: string, id: number}[],
     div : string
 }
 
 function Layout({page_info, div} : LayoutProps){
     const index = page_info.map((value) => {return(
-        <a className="flex flex-row align-middle gap-1.5" href={"#"+value.div}>
+        <a key={value.id} className="flex flex-row align-middle gap-1.5" href={"#"+value.div}>
             <img src="src/icons/location.svg" alt="" className="h-[30px]" />
             <TypographyH3 text={value.name}/>
             <TypographyP text={"(" + value.dates + ")"} />
@@ -36,7 +36,7 @@ function Layout({page_info, div} : LayoutProps){
                 </div>
             </div>
             {page_info.map((value) => (
-                <EducationTemplate div={value.div} name={value.name} dates={value.dates} image={value.image} text={main_text} side={value.side}/>
+                <EducationTemplate id={value.id} div={value.div} name={value.name} dates={value.dates} image={value.image} text={main_text} side={value.side}/>
             ))}    
         </div>
     )
