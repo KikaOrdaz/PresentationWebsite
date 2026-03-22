@@ -11,7 +11,7 @@ export function Learn(){
 }
 
 type LayoutProps = {
-    page_info : {div: string, name: string, dates: string, image: string, side: string, id: number}[],
+    page_info : {div: string, name: string, dates: string, image: string, side: string, id: number, text: string}[],
     div : string
 }
 
@@ -36,7 +36,7 @@ function Layout({page_info, div} : LayoutProps){
                 </div>
             </div>
             {page_info.map((value) => (
-                <EducationTemplate id={value.id} div={value.div} name={value.name} dates={value.dates} image={value.image} text={main_text} side={value.side}/>
+                <EducationTemplate id={value.id} div={value.div} name={value.name} dates={value.dates} image={value.image} text={value.text} side={value.side}/>
             ))}    
         </div>
     )
